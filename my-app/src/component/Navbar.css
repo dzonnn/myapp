@@ -1,0 +1,14 @@
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-section);
+}
+.navigation-bar ul {
+  display: flex;
+  justify-content: center;
+}
+.navigation-bar ul li {
+  margin: auto;
+}

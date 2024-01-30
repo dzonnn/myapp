@@ -1,0 +1,37 @@
+.hightlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 50px;
+  grid-template-areas:
+    "header header header"
+    ". . . ";
+  padding: var(--padding-section);
+}
+.hightlight header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.hightlight button {
+  background-color: var(--primary-yellow);
+  border-radius: 10px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.hightlight article {
+  background-color: var(--light-gray);
+}
+.hightlight article img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+}
+
+.hightlight article button {
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+}

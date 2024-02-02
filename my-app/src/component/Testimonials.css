@@ -1,13 +1,48 @@
 .testimonials {
+  background-color: var(--light-gray);
+  margin: 2% 0;
+  padding: var(--padding-section);
+  display: grid;
+  align-content: center;
+}
+.testimonials > div {
+  margin: 2rem 0;
+}
+.testimonials h1 {
+  font-family: "Karla";
+  font-size: 18pt;
+}
+
+.testimonials > h1 {
+  font-weight: bold;
+}
+
+.testimonials p {
+  font-family: "Karla";
+  font-size: 16pt;
+}
+
+.testimonials > div > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "header header header header"
-    ". . . .";
-  padding: var(--padding-section);
+  column-gap: 2rem;
 }
-.testimonials article {
-  height: 50vh;
+.testimonialCard {
+  background-color: white;
+  padding: 20px;
+}
+
+.testimonialCard div {
+  display: flex;
+  align-items: center;
+}
+.testimonialCard > div > div {
+  text-align: center;
+}
+
+.testimonialCard img {
+  height: 60px;
+  width: 60px;
+  border: solid 1px black;
+  margin-right: 10px;
 }

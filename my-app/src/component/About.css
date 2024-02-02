@@ -1,4 +1,44 @@
 .about {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
+  padding: var(--padding-section);
+}
+.about h1 {
+  color: var(--primary-yellow);
+  font-size: 64pt;
+  font-weight: normal;
+  font-family: "Markazi Text";
+}
+.about h2 {
+  color: var(--dark-gray);
+  font-size: 40pt;
+  font-weight: normal;
+  font-family: "Markazi Text";
+}
+
+.about p {
+  color: var(--dark-gray);
+  font-size: 18pt;
+  font-family: "Karla";
+  font-weight: normal;
+  width: 200pt;
+  line-height: 1.5;
+}
+
+.about img {
+  height: 400px;
+  width: 300px;
+  border: solid 1px black;
+}
+
+.about img:nth-child(1) {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.about img:nth-child(2) {
+  position: relative;
+  bottom: 100px;
 }

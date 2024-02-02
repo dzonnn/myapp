@@ -1,7 +1,7 @@
 .hightlight {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px 50px;
+  gap: 0px 4%;
   grid-template-areas:
     "header header header"
     ". . . ";
@@ -13,16 +13,33 @@
   justify-content: space-between;
   margin: 1rem 0;
 }
+.hightlight h1,
+h3 {
+  font-family: "Karla";
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.hightlight p {
+  font-family: "Karla";
+  font-size: 16pt;
+}
 
 .hightlight button {
   background-color: var(--primary-yellow);
+  border-color: transparent;
   border-radius: 10px;
   height: fit-content;
   padding: 10px;
+  font-family: "Karla";
+  font-size: 16pt;
+  font-weight: bold;
 }
 
 .hightlight article {
   background-color: var(--light-gray);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
 }
 .hightlight article img {
   width: 100%;
@@ -32,6 +49,11 @@
 
 .hightlight article button {
   background-color: transparent;
+
   border: 0;
   padding: 10px;
+}
+
+.hightlight article div {
+  margin: 20px;
 }

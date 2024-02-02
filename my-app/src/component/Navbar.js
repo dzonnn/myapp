@@ -5,9 +5,9 @@ import { NavLink, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className="navigation-bar">
-      <span>
+      <div>
         <img src={logo} alt="" />
-      </span>
+      </div>
       <nav>
         <ul>
           <li>
@@ -20,7 +20,9 @@ const Navbar = () => {
             <NavLink to="/menu">menu</NavLink>
           </li>
           <li>
-            <NavLink to="/reservations">reservations</NavLink>
+            <NavLink to="/booking" c>
+              reservations
+            </NavLink>
           </li>
           <li>
             <NavLink to="/order">order online</NavLink>

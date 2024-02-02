@@ -1,4 +1,17 @@
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5%;
+  padding: var(--padding-section);
+  background-color: var(--primary-gray);
+}
+
+footer img {
+  height: 200px;
+  width: 200px;
+  margin: 2rem 0;
+}
+
+footer h3 {
+  margin-top: 4rem;
 }

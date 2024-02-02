@@ -3,14 +3,18 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  color: black;
 }
 
 :root {
+  /*global color*/
   --primary-gray: #495e57;
   --primary-yellow: #f4ce14;
   --peach: #ee9972;
   --light-peach: #fbdabb;
   --light-gray: #edefee;
   --dark-gray: #333333;
-  --padding-section: 0 2rem;
+  /*global style*/
+  --padding-section: 0 20%;
+  --transition-all: all 0.2s linear;
 }

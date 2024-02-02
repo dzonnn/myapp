@@ -1,0 +1,38 @@
+.booking-form {
+  display: grid;
+  width: 30vw;
+  margin: 2rem auto;
+}
+
+.booking-form label {
+  font-family: "Karla";
+  font-size: 18pt;
+  font-weight: bold;
+}
+.booking-form input {
+  font-family: "Karla";
+  font-size: 16pt;
+}
+.booking-form input,
+select {
+  margin-bottom: 10px;
+  height: 2rem;
+  font-family: "Karla";
+  font-size: 16pt;
+}
+
+.booking-form button {
+  background-color: var(--primary-yellow);
+  font-family: "Karla";
+  font-size: 16pt;
+  font-weight: bold;
+  border-radius: 16pt;
+  width: max-content;
+  padding: 10px;
+  margin: auto;
+  border-color: transparent;
+}
+.booking-form button:hover {
+  transform: scale(1.02);
+  transition: var(--transition-all);
+}

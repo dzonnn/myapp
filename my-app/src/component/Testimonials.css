@@ -46,3 +46,15 @@
   border: solid 1px black;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 680px) {
+  .testimonials {
+    padding: var(--padding-sm-screen);
+  }
+  .testimonials div {
+    overflow: scroll;
+  }
+  .testimonialCard {
+    width: 90vw;
+  }
+}

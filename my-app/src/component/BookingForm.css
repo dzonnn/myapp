@@ -36,3 +36,9 @@ select {
   transform: scale(1.02);
   transition: var(--transition-all);
 }
+
+@media screen and (max-width: 680px) {
+  .booking-form {
+    width: 80%;
+  }
+}

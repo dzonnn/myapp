@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./BookingForm.css";
 import { toast } from "react-toastify";
 
-const BookingForm = ({ dispatch }) => {
+const BookingForm = ({ state, dispatch }) => {
   const [date, setDate] = useState();
   const [time, setTime] = useState();
   const [guestNumber, setGuestNumber] = useState(1);
-  const [occasion, setOccasion] = useState("Birthday");
+  const [occasion, setOccasion] = useState("None");
   const todayDate = () => {
     const today = new Date();
     const formattedToday = today.toISOString().substring(0, 10);
@@ -89,6 +89,7 @@ const BookingForm = ({ dispatch }) => {
             setOccasion(e.target.value);
           }}
         >
+          <option>None</option>
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>

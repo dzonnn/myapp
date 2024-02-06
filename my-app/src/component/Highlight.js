@@ -2,6 +2,7 @@ import "./Highlight.css";
 import greekSalad from "../assets/image/greek salad.jpg";
 import bruchetta from "../assets/image/bruchetta.svg";
 import lemonDessert from "../assets/image/lemon dessert.jpg";
+import { Link } from "react-router-dom";
 
 const Highlight = () => {
   return (

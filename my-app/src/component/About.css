@@ -15,6 +15,7 @@
   font-size: 40pt;
   font-weight: normal;
   font-family: "Markazi Text";
+  margin-top: -2.5rem;
 }
 
 .about p {
@@ -41,4 +42,16 @@
 .about img:nth-child(2) {
   position: relative;
   bottom: 100px;
+}
+
+@media screen and (max-width: 680px) {
+  .about {
+    padding: var(--padding-sm-screen);
+  }
+  .about p {
+    width: 90vw;
+  }
+  .about img {
+    display: none;
+  }
 }

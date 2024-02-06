@@ -1,15 +1,25 @@
 import "./Navbar.css";
 import logo from "../assets/image/Logo.svg";
+import hamburger from "../assets/image/icon _hamburger menu.svg";
 import { NavLink, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+
   return (
     <header className="navigation-bar">
       <div>
         <img src={logo} alt="" />
+
+        <img
+          src={hamburger}
+          alt=""
+          onClick={(e) => setShowNavbar(!showNavbar)}
+        />
       </div>
       <nav>
-        <ul>
+        <ul className={showNavbar ? "display-flex" : "display-none"}>
           <li>
             <NavLink to="/">home</NavLink>
           </li>
@@ -17,7 +27,7 @@ const Navbar = () => {
             <NavLink to="/about">about</NavLink>
           </li>
           <li>
-            <NavLink to="/menu">menu</NavLink>
+            <NavLink to="/">menu</NavLink>
           </li>
           <li>
             <NavLink to="/booking" c>
@@ -25,10 +35,10 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/order">order online</NavLink>
+            <NavLink to="/">order online</NavLink>
           </li>
           <li>
-            <NavLink to="/login">login</NavLink>
+            <NavLink to="/">login</NavLink>
           </li>
         </ul>
       </nav>

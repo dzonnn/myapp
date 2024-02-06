@@ -57,3 +57,10 @@ h3 {
 .hightlight article div {
   margin: 20px;
 }
+
+@media screen and (max-width: 680px) {
+  .hightlight {
+    padding: var(--padding-sm-screen);
+    display: block;
+  }
+}

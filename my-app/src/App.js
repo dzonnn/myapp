@@ -25,8 +25,6 @@ const reducer = (state, action) => {
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  console.log(state);
-
   return (
     <>
       <ToastContainer
@@ -45,7 +43,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route
               path="booking"
-              element={<BookingPage dispatch={dispatch} />}
+              element={<BookingPage state={state} dispatch={dispatch} />}
             />
           </Route>
         </Routes>

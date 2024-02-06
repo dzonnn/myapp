@@ -1,9 +1,9 @@
 import BookingForm from "../component/BookingForm";
 
-const BookingPage = ({ dispatch }) => {
+const BookingPage = ({ state, dispatch }) => {
   return (
     <>
-      <BookingForm dispatch={dispatch} />
+      <BookingForm state={state} dispatch={dispatch} />
     </>
   );
 };

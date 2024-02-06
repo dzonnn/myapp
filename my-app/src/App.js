@@ -24,18 +24,11 @@ const reducer = (state, action) => {
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  console.log(state.avalaibleTime);
 
   return (
     <>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-      />
+      <ToastContainer />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

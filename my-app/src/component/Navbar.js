@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import logo from "../assets/image/Logo.svg";
 import hamburger from "../assets/image/icon _hamburger menu.svg";
-import { NavLink, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -30,9 +30,7 @@ const Navbar = () => {
             <NavLink to="/">menu</NavLink>
           </li>
           <li>
-            <NavLink to="/booking" c>
-              reservations
-            </NavLink>
+            <NavLink to="/booking">reservations</NavLink>
           </li>
           <li>
             <NavLink to="/">order online</NavLink>

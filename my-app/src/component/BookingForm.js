@@ -23,6 +23,7 @@ const BookingForm = ({ state, dispatch }) => {
   };
   return (
     <>
+      <header className="bookink-header">Book Now</header>
       <form
         className="booking-form"
         onSubmit={(e) => {
@@ -36,7 +37,7 @@ const BookingForm = ({ state, dispatch }) => {
           dispatch({ type: "ADD_BOOKING", payload: newBooking });
           toast.success("Booking complete", {
             position: "top-center",
-            autoClose: 5000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,

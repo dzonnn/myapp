@@ -3,6 +3,12 @@
   width: 30vw;
   margin: 2rem auto;
 }
+.bookink-header {
+  font-family: "Karla";
+  font-size: 40pt;
+  text-align: center;
+  font-weight: bold;
+}
 
 .booking-form label {
   font-family: "Karla";

@@ -59,6 +59,9 @@
     background: url("../assets/image/restauranfood.jpg") no-repeat center
       center/cover;
   }
+  .hero h2 {
+    margin-top: -2rem;
+  }
   .hero img {
     display: none;
   }

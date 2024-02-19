@@ -1,28 +1,24 @@
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 5%;
-  padding: var(--padding-section);
+  align-items: center;
+  justify-content: end;
+  margin: var(--padding-section);
   background-color: var(--primary-gray);
 }
 
-footer img {
-  height: 200px;
-  width: 200px;
-  margin: 2rem 0;
+.social-media-links {
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem;
 }
 
-footer h3 {
-  margin-top: 4rem;
+.social-logo {
+  font-size: 1.8rem;
+  margin: 0 5px;
 }
 
 @media screen and (max-width: 680px) {
   footer {
-    display: flex;
     padding: var(--padding-sm-screen);
-    padding-bottom: 10%;
-  }
-  footer img {
-    display: none;
   }
 }

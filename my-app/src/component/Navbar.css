@@ -1,62 +1,60 @@
 .navigation-bar {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
+  padding: var(--padding-sm-screen);
   margin: 1rem 0;
-  padding: var(--padding-section);
 }
-.navigation-bar img {
+
+.navigation-bar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-bar img:first-child {
   height: 3rem;
 }
 
 .navigation-bar img:last-child {
-  display: none;
-}
-.display-none {
-  display: none;
-}
-.display-flex {
-  display: flex;
+  height: 2rem;
 }
 
-.navigation-bar img:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in;
+.navigation-bar nav {
+  transition: var(--transition-all);
 }
 
-.navigation-bar ul {
-  justify-content: center;
-}
 .navigation-bar li {
-  margin: auto;
-  font-family: "Markazi Text";
-  font-size: 18pt;
-  font-weight: bold;
+  text-align: center;
+  height: 2rem;
+}
+
+.navlink {
+  font-size: 20pt;
+  font-family: "Karla";
   text-transform: capitalize;
 }
 
-.navigation-bar li:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in;
+.display-nav {
+  display: block;
+}
+.hide-nav {
+  display: none;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 768px) {
   .navigation-bar {
-    display: block;
-    padding: var(--padding-sm-screen);
-    justify-content: center;
-  }
-  .navigation-bar {
-    display: block;
-    padding: var(--padding-sm-screen);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: var(--padding-section);
   }
   .navigation-bar img:last-child {
-    display: inline-block;
-    height: 1.5rem;
+    display: none;
   }
-  .navigation-bar > div {
+  .navigation-bar nav {
+    display: block;
+  }
+  .navigation-bar ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+  .navigation-bar li {
+    margin: auto;
   }
 }

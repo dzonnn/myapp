@@ -1,13 +1,13 @@
 .hero {
   display: flex;
-  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-gray);
   color: white;
-
-  margin-bottom: 8rem;
-  padding: var(--padding-section);
+  padding: var(--padding-sm-screen);
+  margin: 0;
+  background: url("../assets/image/restauranfood.jpg") no-repeat center
+    center/cover;
 }
 
 .hero h1 {
@@ -33,12 +33,7 @@
 }
 
 .hero img {
-  position: relative;
-
-  top: 4rem;
-  width: 25rem;
-  height: 25rem;
-  border-radius: 16%;
+  display: none;
 }
 
 .hero button {
@@ -52,17 +47,23 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 960px) {
   .hero {
-    padding: var(--padding-sm-screen);
-    margin: 0;
-    background: url("../assets/image/restauranfood.jpg") no-repeat center
-      center/cover;
-  }
-  .hero h2 {
-    margin-top: -2rem;
+    background: var(--primary-gray);
+    padding: var(--padding-md-screen);
   }
   .hero img {
-    display: none;
+    display: block;
+    position: relative;
+    top: 4rem;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 16%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero {
+    padding: var(--padding-lg-screen);
   }
 }

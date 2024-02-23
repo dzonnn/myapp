@@ -15,7 +15,9 @@
   --light-gray: #edefee;
   --dark-gray: #333333;
   /*global style*/
-  --padding-section: 0 20%;
+
   --padding-sm-screen: 0 2%;
+  --padding-md-screen: 0 10%;
+  --padding-lg-screen: 0 20%;
   --transition-all: all 0.2s linear;
 }

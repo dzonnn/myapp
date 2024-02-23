@@ -1,11 +1,5 @@
 .hightlight {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px 4%;
-  grid-template-areas:
-    "header header header"
-    ". . . ";
-  padding: var(--padding-section);
+  padding: var(--padding-sm-screen);
 }
 .hightlight header {
   grid-area: header;
@@ -58,9 +52,26 @@ h3 {
   margin: 20px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 960px) {
   .hightlight {
-    padding: var(--padding-sm-screen);
-    display: block;
+    padding: var(--padding-md-screen);
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hightlight > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+  .hightlight article img {
+    height: 45%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hightlight {
+    padding: var(--padding-lg-screen);
   }
 }
